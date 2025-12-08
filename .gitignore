@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Heavy AI model files
+backend/models/
+*.pt
+*.onnx
+
+# Upload folders
+backend/uploads/
+uploads/
+
+# Logs
+*.log
+
+# OS garbage
+.DS_Store
+Thumbs.db
