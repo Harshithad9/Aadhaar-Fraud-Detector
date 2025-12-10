@@ -1,26 +1,40 @@
+# -----------------------------------------
 # Python cache
 __pycache__/
 *.pyc
 
+# -----------------------------------------
 # Virtual environment
 venv/
 env/
 
-# Ignore ALL model files…
-backend/models/*
-*.pt
-*.onnx
+# -----------------------------------------
+# AI model files
+# Ignore large model types
+backend/models/*.onnx
+backend/models/*.pth
+backend/models/*.bin
 
-# …But allow THIS one:
+# Allow ONLY best.pt and yolov8n.pt
 !backend/models/best.pt
+!backend/models/yolov8n.pt
 
-# Upload folders (do not track)
+# -----------------------------------------
+# Upload folders (should not go to GitHub)
 backend/uploads/
 uploads/
 
+# -----------------------------------------
 # Logs
 *.log
 
+# -----------------------------------------
 # OS garbage
 .DS_Store
 Thumbs.db
+
+# -----------------------------------------
+# Node / frontend junk (if exists)
+node_modules/
+dist/
+build/
