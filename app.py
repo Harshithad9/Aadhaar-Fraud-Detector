@@ -187,19 +187,20 @@ def api_verify_batch():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
     print(f"🚀 Starting AadhaarVerify on port {port}")
-    print(f"📁 Current directory: {os.getcwd()}")
-    print(f"📁 Backend imports working: {BACKEND_IMPORTS_WORKING}")
+    print(f"Current directory: {os.getcwd()}")
+    print(f"Backend imports working: {BACKEND_IMPORTS_WORKING}")
     
     # List files for debugging
-    print("📁 Root directory contents:")
+    print("Root directory contents:")
     for item in os.listdir('.'):
         print(f"   - {item}")
     
     if os.path.exists('backend'):
-        print("📁 Backend directory contents:")
+        print("Backend directory contents:")
         for item in os.listdir('backend'):
             print(f"   - {item}")
     
-    # app.run(host="0.0.0.0", port=port, debug=False)
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=port, debug=False)
+    # app.run(host="0.0.0.0", port=8080, debug=True)
+    
 
