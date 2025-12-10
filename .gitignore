@@ -6,12 +6,15 @@ __pycache__/
 venv/
 env/
 
-# Heavy AI model files
-backend/models/
+# Ignore ALL model files…
+backend/models/*
 *.pt
 *.onnx
 
-# Upload folders
+# …But allow THIS one:
+!backend/models/best.pt
+
+# Upload folders (do not track)
 backend/uploads/
 uploads/
 
