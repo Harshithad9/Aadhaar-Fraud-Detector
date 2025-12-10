@@ -3,19 +3,11 @@ flask-cors==6.0.1
 gunicorn==23.0.0
 
 ultralytics==8.0.0
-
 numpy==1.26.4
 pandas==2.2.2
 opencv-python-headless==4.8.1.78
 pillow==10.2.0
 
-torch==2.0.1+cpu
-torchvision==0.15.2+cpu
-
-pyaadhaar==1.1.3
-pytesseract
-pyzbar
-pylibjpeg
-pylibjpeg-openjpeg
-PyYAML
-requests
+# Compatible PyTorch for Railway (Python 3.10)
+torch==2.0.0
+torchvision==0.15.1
