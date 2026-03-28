@@ -1,39 +1,90 @@
-# Aadhaar Fraud Detection System
+# 🚀 AI-Powered Aadhaar Document Verification & Fraud Detection Platform  
+### (AadhaarAuth System)
 
-This project implements an AI-based system to detect forged or tampered Aadhaar cards using computer vision and deep learning techniques. It features a user-friendly frontend interface and a robust Flask backend for verification.
+---
 
-## 🚀 Features
+## 📌 Overview
+AadhaarAuth System is an AI-powered platform designed to automate Aadhaar document verification and detect fraud using advanced technologies like OCR, Deep Learning, and Computer Vision.
 
-* **AI-based Fraud Detection:** Utilizes a custom-trained YOLOv8 model for high-accuracy fraud pattern identification.
-* **Verification Modes:**
-    * **Single Image Verification:** Endpoint for uploading and analyzing one Aadhaar image at a time.
-    * **Bulk Verification:** Supports uploading a ZIP file containing multiple images for batch processing.
-* **Fraud Pattern Analysis:** Identifies possible fraud patterns such as:
-    * Tampered text
-    * Fake or missing QR codes
-    * Manipulated photos
-    * Edited background or overlays
-    * Missing security features
-* **Technology Stack:**
-    * **Backend:** Flask (Python) with JSON APIs.
-    * **Frontend:** HTML, CSS, and JavaScript.
-    * **Model Integration:** YOLOv8.
-* **Ease of Deployment:** Designed to be easy to customize and deploy.
+It ensures fast, accurate, and scalable identity verification for organizations such as banks, government agencies, telecom providers, and healthcare systems.
 
-## 🛠️ Installation
+---
 
-Follow these steps to set up and run the application locally.
+## ❗ Problem Statement
+India’s Aadhaar system serves 1.4+ billion people, making it vulnerable to:
+- Identity theft  
+- Document forgery  
+- Fraudulent KYC submissions  
 
-🔮 Future Enhancements
-Potential improvements for future development:
+### ⚠️ Limitations of Manual Verification
+- Time-consuming (5–10 minutes per document)  
+- Error-prone due to human fatigue  
+- Not scalable  
+- Inconsistent verification quality  
 
-OCR-based Aadhaar information extraction for data cross-validation.
+---
 
-QR code validation and integrity check.
+## 💡 Solution
+AadhaarAuth automates verification using a multi-layer AI pipeline:
+- AI OCR (Gemini 2.5 Flash) – Context-aware text extraction  
+- YOLOv8 – Fraud/tampering detection  
+- OpenCV – Image forensics  
+- Verhoeff Algorithm – Aadhaar number validation  
 
-Integration of Deepfake detection models for advanced photo manipulation.
+---
 
-Development of an analytics dashboard to track fraud patterns and usage statistics.
+## 🏗️ System Architecture
+- Frontend → UI & Upload  
+- Backend → API + Processing  
+- AI Layer → OCR + Fraud Detection  
+- Database → Storage & Results  
 
-📝 License
-This project is licensed under the MIT License.
+---
+
+## 🛠️ Tech Stack
+
+| Layer            | Technology |
+|------------------|-----------|
+| Frontend         | React 19 |
+| Styling          | TailwindCSS |
+| Animations       | Framer Motion |
+| Backend          | Django |
+| API              | Django REST Framework |
+| AI / OCR         | Gemini 2.5 Flash |
+| Object Detection | YOLOv8 |
+| Computer Vision  | OpenCV |
+| Authentication   | JWT |
+| Database         | SQLite / Supabase |
+
+---
+
+## ✨ Key Features
+- Drag & Drop Document Upload  
+- AI-Powered OCR with context understanding  
+- Multi-layer Fraud Detection  
+- JWT-based Authentication  
+- Real-time Dashboard & Analytics  
+- Batch Processing (multiple documents)  
+- Export results (Excel/CSV/JSON)  
+
+---
+
+## 🖥️ Application Screens
+- Landing Page – Overview and features  
+- Login Page – Secure authentication  
+- Dashboard – Stats, upload, analytics  
+- Document Analysis – Extracted data + fraud detection  
+- Verification Results – Accept/Reject + export  
+
+---
+
+## 🧠 Core Innovations
+
+### 🔹 Multi-Layer Fraud Detection
+| Layer | Technology | Purpose |
+|------|-----------|--------|
+| 1 | YOLOv8 | Object-level tampering |
+| 2 | OpenCV | Image forensics |
+| 3 | Verhoeff | Aadhaar validation |
+
+
