@@ -87,4 +87,14 @@ AadhaarAuth automates verification using a multi-layer AI pipeline:
 | 2 | OpenCV | Image forensics |
 | 3 | Verhoeff | Aadhaar validation |
 
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/your-username/aadhaar-auth.git
+cd aadhaar-auth
+
+
 
