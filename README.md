@@ -96,5 +96,8 @@ AadhaarAuth automates verification using a multi-layer AI pipeline:
 git clone https://github.com/your-username/aadhaar-auth.git
 cd aadhaar-auth
 
-
+### 2. cd backend
+```bash
+pip install -r requirements.txt
+python manage.py runserver
 
